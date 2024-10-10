@@ -11,14 +11,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BrowserFactory {
 
-
-    // Получение драйвера браузера без указания режима
-    public static WebDriver getBrowser() {
-        String browser = System.getProperty("browser", "chrome"); // По умолчанию chrome
-
-        return getBrowser(browser, "default"); // Вызов перегруженного метода с режимом "default"
-    }
-
     // Получение драйвера браузера с указанием режима работы
     public static WebDriver getBrowser(String browser, String mode) {
         WebDriver driver;

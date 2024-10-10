@@ -85,7 +85,8 @@
                 <version>${surefire.plugin.version}</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <browser>edge</browser>
+                        <browser>edge</browser> <!-- Выбор браузера -->
+                        <baseUrl>https://otus.home.kartushin.su/training.html</baseUrl> <!-- Выбор стенда -->
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
